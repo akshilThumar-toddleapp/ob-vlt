@@ -1,0 +1,12 @@
+{
+  "name": "Obsidian in Browser",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "obsidian",
+  "forwardPorts": [3000, 3001],
+  "postCreateCommand": "echo 'Obsidian container ready! Access at http://localhost:3000'",
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
+}
