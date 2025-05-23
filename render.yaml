@@ -1,0 +1,21 @@
+# Render deployment configuration
+services:
+  - type: web
+    name: obsidian
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    envVars:
+      - key: PUID
+        value: "1000"
+      - key: PGID  
+        value: "1000"
+      - key: TZ
+        value: "UTC"
+      - key: TITLE
+        value: "Obsidian"
+    disk:
+      name: obsidian-data
+      mountPath: /config
+      sizeGB: 1

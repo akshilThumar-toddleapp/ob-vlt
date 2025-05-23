@@ -1,0 +1,11 @@
+# Local development files
+obsidian_config/
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
